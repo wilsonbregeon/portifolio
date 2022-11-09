@@ -1,0 +1,291 @@
+/*-----------------------SELETORES-UNIVERSAL----------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*-----------------------SELETORES-UNIVERSAL----------------------------*/
+
+
+/*-----------------------------HEADER-----------------------------------*/
+
+a {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.menu:hover {
+    background-color: #DFDCE6;
+    color: black;
+    border-radius: 4px;
+}
+
+.menu:active {
+    color: #F8F5FF;
+}
+
+.imagem-logo {
+    border-radius: 15px;
+}
+
+.imagem-logo:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+    background-color: #DFDCE6;
+}
+
+.imagem-logo:active {
+    background-color: #7C7A80;
+}
+
+.div-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    height: 10vh;
+    width: 200vh;
+    background-color: #49484F;
+    position: fixed;
+    z-index: 2000;
+}
+
+/*-----------------------------HEADER-----------------------------------*/
+
+
+/*-------------------------CSS-INDEX-------------------------------*/
+
+#index-div-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #F4F2FF;
+}
+
+#index-image-main {
+    border-radius: 230px;
+    width: 30vh;
+    height: 30vh;
+    border: 5px solid black;
+}
+
+#index-frase-main {
+    font-size: 300%;
+}
+
+/*-------------------------CSS-INDEX-------------------------------*/
+
+
+/*-------------------------CSS-ABOUT-------------------------------*/
+
+.about-h2 {
+    padding-bottom: 30px;
+}
+
+#about-section {
+    font-size: 130%;
+    padding-top: 3rem;
+}
+
+#about-div-1,
+#about-div-2,
+#about-div-3 {
+    margin-right: 20px;
+    padding: 50px;
+}
+
+.about-paragrafo {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: small;
+    color: #444346;
+}
+
+.about-imagem {
+    border-radius: 20px;
+    size: 100%;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 90px;
+    margin-right: 10px;
+}
+
+/*-------------------------CSS-ABOUT-------------------------------*/
+
+
+/*----------------------CSS-TECH-STACK-----------------------------*/
+
+/* ID projects.html sendo utilizado junto com ID tech-stack.html(linha 121 até 129) */
+#tech-stack-div-1,
+#projects {
+    padding-top: 3rem;
+    margin-left: 50px;
+    font-size: 130%;
+}
+
+#tech-stack {
+    height: 100vh;
+    padding-top: 2rem;
+    background-color: #F4F2FF;
+}
+
+#tech-stack-h1,
+#projects-h1 {
+    padding-bottom: 20px;
+}
+
+#tech-stack-div-icones-1,
+#tech-stack-div-icones-2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.tech-stack-icones {
+    opacity: 0.6;
+}
+
+.tech-stack-icones:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+    opacity: 1;
+}
+
+/*----------------------CSS-TECH-STACK-----------------------------*/
+
+
+/*----------------------CSS-PROJECTS-------------------------------*/
+
+#projects {
+    margin-left: 50px;
+    padding-top: 5rem;
+}
+
+#projects-div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.projects-section {
+    max-width: 1000px;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#projects-div .card {
+    min-height: 160px;
+    width: 260px;
+    margin: 40px 10px;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #444346;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1000;
+    transition: all .5s ease-in-out;
+}
+
+.card-conteudo {
+    margin: 1rem 0;
+    color: black;
+    overflow: hidden;
+    margin-top: -200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.card-conteudo h2 {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.card-conteudo p {
+    font-size: 1.1rem;
+    line-height: 1.0rem;
+    text-align: center;
+}
+
+.card-conteudo a {
+    width: 200px;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    margin: .6rem auto;
+    font-size: 1.1rem;
+    color: white(169, 46, 46);
+    text-decoration: none;
+    background-color: #222;
+    border-radius: 10px;
+    transition: 3s;
+}
+
+.card-conteudo a:hover {
+    color: #444346;
+    background-color: #000;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover img {
+    margin-top: -60px;
+    box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover>.card-conteudo {
+    margin-top: 2px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----------------------CSS-PROJECTS-------------------------------*/
+
+
+/*----------------------CSS-Contact--------------------------------*/
+
+#div-h1-contact {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #49484F;
+    color: white;
+}
+
+#footer-page-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: #49484F;
+}
+
+#footer-div-contact {
+    margin-left:63vw;
+    
+}
+
+/*----------------------CSS-Contact--------------------------------*/
+
+
